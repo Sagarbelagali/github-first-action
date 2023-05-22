@@ -1,0 +1,10 @@
+name: first workflow
+on: workflow_dispatch #user - manual trigger
+jobs:
+  first-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greeting
+        run: echo "Hello World!"
+      - name: print good bye
+        run: echo "Goodbye"
